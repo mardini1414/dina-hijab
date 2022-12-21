@@ -3,8 +3,8 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <section className="h-[600px] bg-[url('/src/assets/img/bg/bg-hero.webp')] bg-no-repeat bg-cover bg-center relative">
-      <div className="absolute bg-light/10 h-full z-10 w-full left-0 flex justify-center items-center">
-        <div className="text-center max-w-[360px] md:max-w-[600px] bg-light/30 py-4 rounded shadow">
+      <div className="absolute bg-light/10 h-full z-10 w-full left-0 flex justify-center items-center px-4">
+        <div className="text-center max-w-full sm:max-w-[600px] bg-light/30 py-4 px-2 rounded shadow">
           <h1 className="font-italiano text-slate-900 text-5xl">Dina Hijab</h1>
           <p className="my-3 leading-relaxed text-white">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus incidunt
