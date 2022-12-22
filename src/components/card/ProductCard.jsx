@@ -19,7 +19,7 @@ const ProductCard = ({ image, title, oldPrice, price }) => {
           Rp.{oldPrice}
         </small>
         <span className="block text-slate-900 font-semibold">Rp.{price}</span>
-        <button className="bg-primary py-1 rounded text-white">Dapatkan sekarang</button>
+        <button className="bg-primary py-2 rounded text-white">Dapatkan sekarang</button>
       </div>
     </div>
   );

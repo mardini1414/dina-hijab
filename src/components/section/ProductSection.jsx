@@ -6,7 +6,7 @@ import CategoryCard from '../card/CategoryCard';
 const ProductSection = () => {
   return (
     <section className="container mx-auto px-4">
-      <div>
+      <div className="pt-8">
         <h2 className="text-primary text-3xl mx-auto my-8 w-max">
           Spesial untukmu
           <svg
@@ -45,7 +45,7 @@ const ProductSection = () => {
           />
         </div>
       </div>
-      <div>
+      <div className="py-8">
         <h2 className="text-primary text-3xl mx-auto my-8 w-max">
           <svg
             xmlns="http://www.w3.org/2000/svg"
