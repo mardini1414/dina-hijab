@@ -18,10 +18,10 @@ const OfferSection = () => {
         </h2>
       </div>
       <div className="relative">
-        <div className="w-10 h-10 bg-white/80 shadow-lg next-el flex justify-center items-center rounded-full absolute bottom-1/2 -left-5 z-20">
+        <div className="w-10 h-10 bg-white/80 shadow-lg next-el flex justify-center items-center rounded-full absolute bottom-1/2 left-2 sm:-left-5 z-20">
           <ChevronIcon direction={'left'} />
         </div>
-        <div className="w-10 h-10 bg-white/80 shadow-lg prev-el flex justify-center items-center rounded-full absolute bottom-1/2 -right-5 z-20">
+        <div className="w-10 h-10 bg-white/80 shadow-lg prev-el flex justify-center items-center rounded-full absolute bottom-1/2 right-2 sm:-right-5 z-20">
           <ChevronIcon direction={'right'} />
         </div>
         <Swiper
