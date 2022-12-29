@@ -3,7 +3,7 @@ import AboutImage from '../../assets/img/bg/about.webp';
 
 const AboutSection = () => {
   return (
-    <section className="container mx-auto px-4 mt-8">
+    <section className="container mx-auto px-4 mt-20">
       <div className="flex justify-center flex-col md:flex-row text-center md:text-start">
         <div className="relative max-w-[400px] md:mr-10">
           <div className="absolute left-0 w-full h-full bg-light/20"></div>

@@ -6,11 +6,7 @@ const CategoryCard = ({ title, image }) => {
       <div className="relative overflow-hidden">
         <div className="hover:scale-110 transition duration-300 ease-in-out">
           <div className="absolute w-full h-full left-0 bottom-0 bg-gradient-to-t from-light/50 to-light/20"></div>
-          <img
-            src={image}
-            alt={title}
-            className="rounded-sm object-cover object-center"
-          />
+          <img src={image} alt={title} className="rounded object-cover object-center" />
           <h3 className="text-white text-5xl underline font-italiano text-center absolute bottom-12 left-1/2 -translate-x-1/2 z-10">
             {title}
           </h3>
