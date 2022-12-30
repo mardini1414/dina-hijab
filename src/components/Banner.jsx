@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     open && (
       <div className="bg-slate-900 text-white text-center py-2 relative">
-        <span>Gratis ongkir!</span>
+        <span>Dapatkan diskon sampai 70%</span>
         <div
           className="absolute right-2 top-2 cursor-pointer"
           onClick={() => setOpen(false)}

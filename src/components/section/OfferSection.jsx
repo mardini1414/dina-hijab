@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 
 const OfferSection = () => {
   return (
-    <section className="container mx-auto px-4">
+    <section className="container mx-auto px-4" id="offer">
       <div className="pt-8">
         <h2 className="text-primary text-2xl sm:text-3xl mx-auto my-8 w-max">
           <HeartIcon />
@@ -18,10 +18,10 @@ const OfferSection = () => {
         </h2>
       </div>
       <div className="relative">
-        <div className="w-10 h-10 bg-white/80 shadow-lg next-el flex justify-center items-center rounded-full absolute bottom-1/2 left-2 sm:-left-5 z-20">
+        <div className="w-10 h-10 bg-white/80 shadow-lg prev-el flex justify-center items-center rounded-full absolute bottom-1/2 left-2 sm:-left-5 z-20">
           <ChevronIcon direction={'left'} />
         </div>
-        <div className="w-10 h-10 bg-white/80 shadow-lg prev-el flex justify-center items-center rounded-full absolute bottom-1/2 right-2 sm:-right-5 z-20">
+        <div className="w-10 h-10 bg-white/80 shadow-lg next-el flex justify-center items-center rounded-full absolute bottom-1/2 right-2 sm:-right-5 z-20">
           <ChevronIcon direction={'right'} />
         </div>
         <Swiper
@@ -31,7 +31,7 @@ const OfferSection = () => {
           pagination={{ clickable: true }}
           centeredSlides={true}
           centeredSlidesBounds={true}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
           modules={[Autoplay, Navigation]}
           breakpoints={{
             '@0.00': { slidesPerView: 1 },

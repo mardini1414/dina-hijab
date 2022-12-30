@@ -5,7 +5,7 @@ import HeartIcon from '../icon/HeartIcon';
 
 const ProductSection = () => {
   return (
-    <section className="container mx-auto px-4">
+    <section className="container mx-auto px-4" id="product">
       <div className="pt-8">
         <h2 className="text-primary text-2xl sm:text-3xl mx-auto my-8 w-max">
           <HeartIcon />

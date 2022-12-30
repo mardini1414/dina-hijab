@@ -3,14 +3,10 @@ import React from 'react';
 const ProductCard = ({ image, title, oldPrice, price }) => {
   return (
     <div className="max-w-[400px]">
-      <div className="overflow-hidden relative">
+      <div className="overflow-hidden relative rounded">
         <div className="hover:scale-110 transition duration-300 ease-in-out">
           <div className="absolute left-0 bg-light/20 w-full h-full"></div>
-          <img
-            src={image}
-            alt={title}
-            className="rounded-sm object-cover object-center"
-          />
+          <img src={image} alt={title} className="object-cover object-center" />
         </div>
       </div>
       <div className="mt-3 grid gap-2 text-center">

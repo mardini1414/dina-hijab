@@ -1,12 +1,13 @@
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import scrollIntoView from '../helper/scrollIntoView';
 
 const navigation = [
-  { name: 'Home', href: '#', current: false },
-  { name: 'Produk', href: '#', current: false },
-  { name: 'Tentang Kami', href: '#', current: false },
-  { name: 'Hubungi', href: '#', current: false },
+  { name: 'Home', id: 'home', current: false },
+  { name: 'Produk', id: 'product', current: false },
+  { name: 'Tentang Kami', id: 'about', current: false },
+  { name: 'Hubungi', id: 'contact', current: false },
 ];
 
 function classNames(...classes) {
@@ -40,9 +41,9 @@ export default function Navbar() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <span
                         key={item.name}
-                        href={item.href}
+                        onClick={() => scrollIntoView(item.id)}
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-primary',
                           'px-3 py-2 rounded-md text-sm font-medium'
@@ -50,7 +51,7 @@ export default function Navbar() {
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
-                      </a>
+                      </span>
                     ))}
                   </div>
                 </div>
@@ -61,18 +62,16 @@ export default function Navbar() {
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (
-                <Disclosure.Button
+                <span
                   key={item.name}
-                  as="a"
-                  href={item.href}
+                  onClick={() => scrollIntoView(item.id)}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-primary',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
-                  aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
-                </Disclosure.Button>
+                </span>
               ))}
             </div>
           </Disclosure.Panel>

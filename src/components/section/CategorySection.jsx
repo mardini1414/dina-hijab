@@ -5,7 +5,7 @@ import HeartIcon from '../icon/HeartIcon';
 
 const CategorySection = () => {
   return (
-    <section className="container mx-auto px-4">
+    <section className="container mx-auto px-4" id="category">
       <div className="py-8">
         <h2 className="text-primary text-2xl sm:text-3xl mx-auto my-8 w-max">
           <HeartIcon />

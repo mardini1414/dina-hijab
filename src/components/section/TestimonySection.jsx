@@ -6,7 +6,7 @@ import Image from '../../assets/img/avatar/person.webp';
 
 const TestimonySection = () => {
   return (
-    <section className="container mx-auto px-4 mt-20">
+    <section className="container mx-auto px-4 mt-20" id="testimony">
       <div className="pb-8 text-center">
         <h2 className="text-slate-900 text-5xl font-italiano text-shadow">
           Apa kata mereka?
@@ -15,7 +15,7 @@ const TestimonySection = () => {
       <div className="">
         <Swiper
           slidesPerView={1}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
           loop={true}
           modules={[Autoplay]}
           breakpoints={{
