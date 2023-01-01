@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="absolute bg-light/10 h-full z-10 w-full left-0 flex justify-center items-center px-4">
         <div
           data-aos="zoom-in"
-          data-aos-delay="500"
+          data-aos-delay="1000"
           className="text-center max-w-full sm:max-w-[600px] bg-light/50 py-4 px-2 rounded shadow"
         >
           <h1 className="font-italiano text-slate-900 text-5xl">Dina Hijab</h1>
