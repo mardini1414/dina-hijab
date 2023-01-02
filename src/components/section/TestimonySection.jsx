@@ -12,48 +12,46 @@ const TestimonySection = () => {
           Apa kata mereka?
         </h2>
       </div>
-      <div className="">
-        <Swiper
-          slidesPerView={1}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
-          loop={true}
-          modules={[Autoplay]}
-          breakpoints={{
-            '@0.00': { slidesPerView: 1 },
-            640: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-          }}
-        >
-          <SwiperSlide>
-            <TestimonyCard
-              image={Image}
-              name="Azizah"
-              text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tempore officiis"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TestimonyCard
-              image={Image}
-              name="Azizah"
-              text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tempore officiis"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TestimonyCard
-              image={Image}
-              name="Azizah"
-              text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tempore officiis"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TestimonyCard
-              image={Image}
-              name="Azizah"
-              text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tempore officiis"
-            />
-          </SwiperSlide>
-        </Swiper>
-      </div>
+      <Swiper
+        slidesPerView={1}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        loop={true}
+        modules={[Autoplay]}
+        breakpoints={{
+          '@0.00': { slidesPerView: 1 },
+          640: { slidesPerView: 2 },
+          768: { slidesPerView: 3 },
+        }}
+      >
+        <SwiperSlide>
+          <TestimonyCard
+            image={Image}
+            name="Azizah"
+            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tempore officiis"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <TestimonyCard
+            image={Image}
+            name="Azizah"
+            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tempore officiis"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <TestimonyCard
+            image={Image}
+            name="Azizah"
+            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tempore officiis"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <TestimonyCard
+            image={Image}
+            name="Azizah"
+            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tempore officiis"
+          />
+        </SwiperSlide>
+      </Swiper>
     </section>
   );
 };

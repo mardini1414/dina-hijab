@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProductCard = ({ image, title, oldPrice, price }) => {
   return (
-    <div className="max-w-[400px]">
+    <div className="max-w-[400px] mx-auto">
       <div className="overflow-hidden relative rounded">
         <div className="hover:scale-110 transition duration-300 ease-in-out">
           <div className="absolute left-0 bg-light/20 w-full h-full"></div>
